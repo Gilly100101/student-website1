@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scoop69 - Freez your World</title>
+<style>
+	h2 {text-align: center;}
+	
+	body{background: #EAFAF1}
+
+	.multicolortext {
+        background-image: linear-gradient(to left, violet, indigo, green, blue, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+	header{
+		font-family:Brush Script MT;font-size:100px;
+	}
+</style>
+</head>
+<body>
+<header>
+<img src="ContImage/prod.jpg" title="Products" style="width:120px; height:100px;">
+<a href="Scoop69.html">
+<img src="ContImage/Scoop69.jpg" title="Scoop69 - Find pleasure in Ice" style="width:100px; height:100px;">
+</a>
+</header>
+<hr>
+<nav>
+<table cellspacing = "5"; cellpadding = "5";>
+<tr>
+<td><a href="Scoop69.html">Home</td>
+<td><a href="About.html">About</td>
+<td><a href="Location.html">Location</td>
+<td><a href="Products.html">Products</td>
+<td><a href="Help.html">Help</td>
+</tr>
+</table>
+</nav>
+<hr>
+
+<h1>Cups <img src="ContImage/cup.jpg" title="Cups" style="width:100px;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="final.html"><button type="button">Order now</button></a></h1>
+<nav>
+<table cellspacing = "2"; cellpadding = "2";>
+<tr>
+<form>
+<td><img src="ContImage/IceCream/cream10.jpg" style="width:50%;" title="Almond Joy (₱25)"> <br><input type="checkbox" id="Icecream1" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream11.jpg" style="width:50%;" title="Banana (₱15)"> <br><input type="checkbox" id="Icecream2" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream14.jpg" style="width:50%;" title="Butter Crunch (₱25)"> <br><input type="checkbox" id="Icecream3" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream15.jpg" style="width:50%;" title="Butter Pecan (₱20)"> <br><input type="checkbox" id="Icecream4" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream17.jpg" style="width:50%;" title="Cherry Vanilla (₱15)"> <br><input type="checkbox" id="Icecream5" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream18.jpg" style="width:50%;" title="Chocolate (₱20)"> <br><input type="checkbox" id="Icecream6" class="ice2" value="5"></td>
+</form>
+</tr>
+
+<tr>
+<td><img src="ContImage/IceCream/cream22.jpg" style="width:50%;" title="Coffee Oreo (₱30)"> <br><input type="checkbox" id="Icecream17" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream23.jpg" style="width:50%;" title="Cotton Candy (₱25)"> <br><input type="checkbox" id="Icecream8" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream26.jpg" style="width:50%;" title="Graham Cracker Chip (₱30)"> <br><input type="checkbox" id="Icecream9" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream27.jpg" style="width:50%;" title="Lemon Sorbet  (₱25)"> <br><input type="checkbox" id="Icecream10" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream29.jpg" style="width:50%;" title="Mint Chip (₱25)"> <br><input type="checkbox" id="Icecream11" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream19.jpg" style="width:50%;" title="Chocolate Chip (₱25)"> <br><input type="checkbox" id="Icecream12" class="ice2" value="5"></td>
+
+</tr>
+
+<tr>
+
+<td><img src="ContImage/IceCream/cream30.jpg" style="width:50%;" title="Orange Sherbet (₱20)"> <br><input type="checkbox" id="Icecream13" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream33.jpg" style="width:50%;" title="Raspberry Sorbet (₱30)"> <br><input type="checkbox" id="Icecream14" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream34.jpg" style="width:50%;" title="Red Velvet (₱25)"> <br><input type="checkbox" id="Icecream15" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream35.jpg" style="width:50%;" title="Strawberry (₱25)"> <br><input type="checkbox" id="Icecream16" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream37.jpg" style="width:50%;" title="Vanilla (₱15)"> <br><input type="checkbox" id="Icecream17" class="ice2" value="5"></td>
+<td><img src="ContImage/IceCream/cream38.jpg" style="width:50%;" title="Watermelon Sherbert (₱20)"> <br><input type="checkbox" id="Icecream18" class="ice2" value="5"></td>
+</form>
+</tr>
+</table>
+</nav>
+<button onclick="checkAll4()">Check all</button><button onclick="unCheckAll4()">Un-Check all</button> <br><br>  
+
+<br> 
+<h4 style="color:green" id="result4"></h4> 
+<script>
+function checkAll4() {  
+        var inputs = document.querySelectorAll('.ice2');   
+        for (var i = 0; i < inputs.length; i++) {   
+            inputs[i].checked = true;   
+        }   
+	return document.getElementById("result4").innerHTML = "Your total for Ice Cream products is ₱145";
+}
+function unCheckAll4() {  
+        var inputs = document.querySelectorAll('.ice2');   
+        for (var i = 0; i < inputs.length; i++) {   
+            inputs[i].checked = false;   
+        }   
+        return document.getElementById("result4").innerHTML = " ";
+}      
+
+</script>
+<br>
+<p>Toppings</p>
+<br>
+<nav>
+<table cellspacing = "2"; cellpadding = "2";>
+<tr>
+<form>
+<td><img src="ContImage/Toppings/top10.jpg" style="width:50%;" title="Hot Fudge (₱10)"> <br><input type="checkbox" id="Topings1" class="top" value="5"></td>
+<td><img src="ContImage/Toppings/top11.jpg" style="width:50%;" title="Sprinkles (₱10)"> <br><input type="checkbox" id="Topings2" class="top" value="5"></td>
+<td><img src="ContImage/Toppings/top12.jpg" style="width:50%;" title="Caramel (₱10)"> <br><input type="checkbox" id="Topings3" class="top" value="5"></td>
+<td><img src="ContImage/Toppings/top13.jpg" style="width:50%;" title="Oreos (₱10)"> <br><input type="checkbox" id="Topings4" class="top" value="5"></td>
+<td><img src="ContImage/Toppings/top14.jpg" style="width:50%;" title="Cookie Dough (₱10)"> <br><input type="checkbox" id="Topings5" class="top" value="5"></td>
+</tr>
+<tr>
+<td><img src="ContImage/Toppings/top15.jpg" style="width:50%;" title="Whipped Cream (₱10)"> <br><input type="checkbox" id="Topings6" class="top" value="5"></td>
+<td><img src="ContImage/Toppings/top16.jpg" style="width:50%;" title="Hard Chocolate Coating (₱10)"> <br><input type="checkbox" id="Topings7" class="top" value="5"></td>
+<td><img src="ContImage/Toppings/top17.jpg" style="width:50%;" title="Cereal (₱10)"> <br><input type="checkbox" id="Topings8" class="top" value="5"></td>
+<td><img src="ContImage/Toppings/top18.jpg" style="width:50%;" title="Nuts (₱10)"> <br><input type="checkbox" id="Topings9" class="top" value="5"></td>
+<td><img src="ContImage/Toppings/top19.jpg" style="width:50%;" title="Fruit (₱15)"> <br><input type="checkbox" id="Topings0" class="top" value="5"></td>       
+</tr>
+</form>
+</tr>
+</table>
+</nav>
+<button onclick="checkAll3()">Check all</button><button onclick="unCheckAll3()">Un-Check all</button> <br><br>  
+
+<br> 
+<h4 style="color:green" id="result3"></h4> 
+<script>
+function checkAll3() {  
+        var inputs = document.querySelectorAll('.top');   
+        for (var i = 0; i < inputs.length; i++) {   
+            inputs[i].checked = true;   
+        }   
+	return document.getElementById("result3").innerHTML = "Your total for Toppings products is ₱50";
+}
+function unCheckAll3() {  
+        var inputs = document.querySelectorAll('.top');   
+        for (var i = 0; i < inputs.length; i++) {   
+            inputs[i].checked = false;   
+        }   
+        return document.getElementById("result3").innerHTML = " ";
+}      
+
+</script>
+<hr>
+<br>
+<br>
+<h1>Cakes <img src="ContImage/cake.jfif" title="Cakes" style="width:100px;height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="final.html"><button type="button">Order now</button></a></h1>
+<br>
+<br>
+<nav>
+<table cellspacing = "2"; cellpadding = "2";>
+<tr>
+<form>
+<td><img src="ContImage/Cakes/cake1.jpg" style="width:50%;" title="Giant Chipwich Cake (₱250)"> <br><input type="checkbox" id="cake1" class="cake" value="300"></td>
+<td><img src="ContImage/Cakes/cake2.jpg" style="width:50%;" title="Strawberry Shortcake Ice Cream Cake (₱250)"> <br><input type="checkbox" id="cake2" class="cake" value="300"></td>
+<td><img src="ContImage/Cakes/cake3.jpg" style="width:50%;" title="Perfect Ice Cream Cake (₱350)"> <br><input type="checkbox" id="cake3" class="cake" value="300"></td>
+<td><img src="ContImage/Cakes/cake4.jpg" style="width:50%;" title="Spumoni Ice Cream Cake (₱350)"> <br><input type="checkbox" id="cake4" class="cake" value="300"></td>
+<td><img src="ContImage/Cakes/cake5.jpg" style="width:50%;" title="Cookies 'N' Cream Ice Cream Pie (₱300)"> <br><input type="checkbox" id="cake5" class="cake" value="300"></td>
+</form>
+</tr>
+</table>
+</nav>
+<button onclick="checkAll2()">Check all</button><button onclick="unCheckAll2()">Un-Check all</button> <br><br>  
+
+<br> 
+<h4 style="color:green" id="result2"></h4> 
+<script>
+function checkAll2() {  
+        var inputs = document.querySelectorAll('.cake');   
+        for (var i = 0; i < inputs.length; i++) {   
+            inputs[i].checked = true;   
+        }   
+	return document.getElementById("result2").innerHTML = "Your total for Cake products is ₱1, 500";
+}
+function unCheckAll2() {  
+        var inputs = document.querySelectorAll('.cake');   
+        for (var i = 0; i < inputs.length; i++) {   
+            inputs[i].checked = false;   
+        }   
+        return document.getElementById("result2").innerHTML = " ";
+}      
+
+</script>
+<hr>
+<br>
+<br>
+<h1>Popsicle Stick <img src="ContImage/stick.jpg" title="Sticks" style="width:100px;height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="final.html"><button type="button">Order now</button></a></h1>
+<br>
+<br>
+<nav>
+<table cellspacing = "2"; cellpadding = "2";>
+<tr>
+<form>
+<td><img src="ContImage/Popsicle/ice10.jpg" style="width:50%;" title="Magnum (₱80)"> <br><input type="checkbox" id="stick1" class="sk" value="80"></td>
+<td><img src="ContImage/Popsicle/ice12.jpg" style="width:50%;" title="Corneto Rocky Road (₱25)"> <br><input type="checkbox" id="stick2" class="sk" value="10"></td>
+<td><img src="ContImage/Popsicle/ice13.jpg" style="width:50%;" title="Mint n Nut Stick (₱25)"> <br><input type="checkbox" id="stick3" class="sk" value="10"></td>
+<td><img src="ContImage/Popsicle/ice14.jpg" style="width:50%;" title="Oreo (₱20)"> <br><input type="checkbox" id="stick4" class="sk" value="10"></td>
+<td><img src="ContImage/Popsicle/ice15.jpg" style="width:50%;" title="Crunch (₱15)"> <br><input type="checkbox" id="stick5" class="sk" value="10"></td>
+<td><img src="ContImage/Popsicle/ice16.jpg" style="width:50%;" title="Choco Stick (₱15)"> <br><input type="checkbox" id="stick6" class="sk" value="10"></td>
+</form>
+</tr>
+</table>
+</nav>
+<button onclick="checkAll1()">Check all</button> <button onclick="unCheckAll1()">Un-Check all</button><br><br>  
+
+<br> 
+<h4 style="color:green" id="result1"></h4> 
+<script>
+function checkAll1() {  
+        var inputs = document.querySelectorAll('.sk');   
+        for (var i = 0; i < inputs.length; i++) {   
+            inputs[i].checked = true;   
+        }   
+	return document.getElementById("result1").innerHTML = "Your total for Popsicle Stick products is ₱130";
+}  
+function unCheckAll1() {  
+        var inputs = document.querySelectorAll('.sk');   
+        for (var i = 0; i < inputs.length; i++) {   
+            inputs[i].checked = false;   
+        }   
+        return document.getElementById("result1").innerHTML = " ";
+}    
+
+</script>
+<hr>
+<br>
+<br>
+<h1>Adults<img src="ContImage/Ad3.jpg" title="Sticks" style="width:100px;height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="final.html"><button type="button">Order now</button></a></h1>
+<br>
+<br>
+<nav>
+<table cellspacing = "2"; cellpadding = "2"; name="adultpro">
+<tr>
+<form>
+<td><img src="ContImage/Ad1.jpg" style="width:50%;" title="Adult Product 1 (₱60)"> <br><input type="checkbox" id="adult1" class="ad" value="60"></td>
+<td><img src="ContImage/Ad2.jpg" style="width:50%;" title="Adult Product 2 (₱60)"> <br><input type="checkbox" id="adult2" class="ad" value="60"></td>
+<td><img src="ContImage/Ad3.jpg" style="width:50%;" title="Adult Product 3 (₱60)"> <br><input type="checkbox" id="adult3" class="ad" value="60"></td>
+<td><img src="ContImage/Ad4.jpg" style="width:50%;" title="Adult Product 4 (₱60)"> <br><input type="checkbox" id="adult4" class="ad" value="60"></td>
+</form>
+</tr>
+</table>
+</nav>
+<button onclick="checkAll()">Check all</button><button onclick="unCheckAll()">Un-Check all</button>
+<br> 
+<h4 style="color:green" id="result"></h4> 
+<script>
+function checkAll() {  
+        var inputs = document.querySelectorAll('.ad');   
+        for (var i = 0; i < inputs.length; i++) {   
+            inputs[i].checked = true;   
+        }   
+	return document.getElementById("result").innerHTML = "Your total for adult products is ₱240";
+}
+function unCheckAll() {  
+        var inputs = document.querySelectorAll('.ad');   
+        for (var i = 0; i < inputs.length; i++) {   
+            inputs[i].checked = false;   
+        }   
+	return document.getElementById("result").innerHTML = " ";
+}
+</script>
+<br>
+<hr>
+<footer>
+Copyright &copy; Scoop69.com 2021-2022
+</body>
+</html>
